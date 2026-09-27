@@ -299,17 +299,23 @@
 //     </>
 //   );
 // }
-
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone } from "lucide-react";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import CtaBand from "@/components/CtaBand";
 import ContactForm from "@/components/ContactForm";
-import { services, whyUs, industries, process, site } from "@/lib/site";
+import {
+  services,
+  whyUs,
+  industries,
+  process,
+  site,
+  mobileCranes,
+} from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -341,13 +347,79 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Mobile Cranes intro section ─────────────────────── */}
+      <section className="bg-ink-950 py-20 text-white sm:py-24">
+        <div className="container-x grid gap-14 lg:grid-cols-2 lg:items-center">
+          <div className="relative">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <Image
+                src="/assets/cranes/crane2.jpg"
+                alt=" mobile crane in operation"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-950/60 to-transparent" />
+            </div>
+            <div className="absolute -bottom-6 -right-4 hidden rounded-lg bg-brand-500 px-7 py-6 shadow-xl sm:block">
+              <p className="font-display text-4xl font-bold text-ink-100 ">
+                75–700
+              </p>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-ink-100 ">
+                Ton Capacity
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <span className="eyebrow-light">Mobile Crane Fleet</span>
+            <h2 className="mt-3 text-3xl leading-[1.1] text-white sm:text-4xl lg:text-[42px]">
+              Mobile Cranes from 75 to 700 Ton
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ink-300">
+              Our mobile crane fleet covers every lifting requirement — from
+              compact 75 ton units for urban construction and HVAC
+              installations, up to 700 ton heavy-lift capacity for oil field and
+              offshore projects.
+            </p>
+
+            <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {mobileCranes.map((crane) => (
+                <li
+                  key={crane.slug}
+                  className="rounded-md border border-white/10 bg-white/5 px-4 py-3 text-center"
+                >
+                  <p className="font-display text-lg font-bold text-brand-400">
+                    {crane.tonnage}
+                  </p>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-ink-300">
+                    Ton
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link href="/mobile-cranes" className="btn-primary text-ink-100 ">
+                View Mobile Crane Fleet
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a href={site.phonePrimaryHref} className="btn-outline">
+                <Phone className="h-4 w-4" /> Book a Crane
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* ─────────────────────────────────────────────────── */}
+
       {/* About / Why us */}
       <section className="bg-ink-50 py-20 sm:py-24">
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80"
+                src="/assets/cranes/crane3.jpg"
                 alt="Heavy crane operating on site"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -355,10 +427,10 @@ export default function HomePage() {
               />
             </div>
             <div className="absolute -bottom-6 -right-4 hidden rounded-lg bg-brand-500 px-7 py-6 shadow-xl sm:block">
-              <p className="font-display text-4xl font-bold text-ink-900">
+              <p className="font-display text-4xl font-bold text-ink-100 ">
                 18+
               </p>
-              <p className="text-xs font-bold uppercase tracking-[0.16em] text-ink-800">
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-ink-100 ">
                 Years of Service
               </p>
             </div>
@@ -392,7 +464,7 @@ export default function HomePage() {
               ))}
             </ul>
 
-            <Link href="/about" className="btn-primary mt-9">
+            <Link href="/about" className="btn-primary mt-9 text-ink-100 ">
               More About Us <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -424,7 +496,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Industries — now image grid */}
+      {/* Industries — image grid */}
       <section className="bg-ink-900 py-20 sm:py-24">
         <div className="container-x">
           <SectionHeading

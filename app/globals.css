@@ -24,9 +24,99 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+/* 
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink-700 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold uppercase tracking-tight text-ink-900;
+  }
+
+  ::selection {
+    @apply bg-brand-400 text-ink-900;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply container max-w-7xl;
+  }
+
+  
+  .btn,
+  .btn-primary,
+  .btn-dark,
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3.5 text-sm font-semibold uppercase tracking-wider transition-all duration-200;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-brand-500 text-ink-900 hover:bg-brand-400 hover:shadow-lg hover:shadow-brand-500/30;
+  }
+
+  .btn-dark {
+    @apply bg-ink-900 text-white hover:bg-ink-800;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white/30 text-white hover:border-brand-400 hover:text-brand-400;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-brand-600;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-brand-400;
+  }
+
+  .field {
+    @apply w-full rounded-md border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900 placeholder:text-ink-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
+  }
+
+  .label {
+    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-600;
+  }
+} */
 
 @import "tailwindcss";
 @config "../tailwind.config.ts";
+
+/* ── Keyframes ─────────────────────────────────────────────
+   Used by Hero slider progress bar and other animations.
+   ─────────────────────────────────────────────────────────── */
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @layer base {
   html {
@@ -89,5 +179,16 @@ body {
 
   .label {
     @apply mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink-600;
+  }
+}
+
+/* ── Utilities ────────────────────────────────────────────── */
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out both;
+  }
+
+  .animate-progress {
+    animation: progress linear forwards;
   }
 }

@@ -126,6 +126,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
 import { nav, services, site } from "@/lib/site";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -136,9 +137,13 @@ export default function Footer() {
         {/* Brand */}
         <div className="lg:col-span-1">
           <div className="flex items-center gap-3">
-            <span className="grid h-11 w-11 place-items-center rounded-md bg-brand-500 font-display text-lg font-bold text-ink-900">
-              MS
-            </span>
+            <Image
+              src="/assets/logo.png"
+              alt="Mohamed Salem Al Shamsi"
+              width={44}
+              height={44}
+              className="h-20 w-40 shrink-0 rounded-md object-cover"
+            />
             <span className="font-display text-base font-bold uppercase leading-tight tracking-wide text-white">
               Mohamed Salem
               <br />
@@ -146,7 +151,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <p dir="rtl" className="mt-5 text-sm leading-relaxed text-ink-400">
+          <p dir="rtl" className="mt-5 text-sm leading-relaxed text-ink-100">
             {site.arabicName}
           </p>
           <p className="mt-4 text-sm font-semibold uppercase tracking-wider text-brand-400">

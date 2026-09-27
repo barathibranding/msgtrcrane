@@ -58,7 +58,7 @@ export default function ContactPage() {
                   key={card.title}
                   className="rounded-lg border border-ink-100 bg-white p-6 shadow-card"
                 >
-                  <span className="grid h-12 w-12 place-items-center rounded-md bg-ink-900 text-brand-400">
+                  <span className="grid h-12 w-12 place-items-center rounded-md bg-ink-900 text-ink-100 ">
                     <Icon className="h-6 w-6" />
                   </span>
                   <h3 className="mt-5 text-base text-ink-900">{card.title}</h3>
@@ -126,13 +126,13 @@ export default function ContactPage() {
 
               <div className="mt-5 rounded-lg bg-ink-900 p-6 text-white">
                 <h3 className="text-lg text-white">Emergency Recovery</h3>
-                <p className="mt-2 text-sm text-ink-300">
+                <p className="mt-2 text-sm text-ink-100">
                   Broken down or involved in an accident? Call our 24/7 dispatch
                   line and we will send the nearest recovery unit.
                 </p>
                 <a
                   href={site.phonePrimaryHref}
-                  className="btn-primary mt-5 w-full"
+                  className="btn-primary mt-5 w-full text-ink-100"
                 >
                   <Phone className="h-4 w-4" /> {site.phonePrimary}
                 </a>

@@ -134,7 +134,7 @@
 // export const metadata: Metadata = {
 //   title: "Our Fleet",
 //   description:
-//     "Mobile cranes (Kato), wheel loaders, boom loaders, 3-axle tipper trucks, low bed trailers, passenger buses and recovery trucks available for hire in Abu Dhabi, UAE.",
+//     "Mobile cranes (), wheel loaders, boom loaders, 3-axle tipper trucks, low bed trailers, passenger buses and recovery trucks available for hire in Abu Dhabi, UAE.",
 // };
 
 // const gallery = [
@@ -301,7 +301,7 @@ import { fleet, materials, site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Our Fleet",
   description:
-    "Mobile cranes (Kato), wheel loaders, boom loaders, 3-axle tipper trucks, low bed trailers, passenger buses and recovery trucks available for hire in Abu Dhabi, UAE.",
+    "Mobile cranes (), wheel loaders, boom loaders, 3-axle tipper trucks, low bed trailers, passenger buses and recovery trucks available for hire in Abu Dhabi, UAE.",
 };
 
 export default function FleetPage() {

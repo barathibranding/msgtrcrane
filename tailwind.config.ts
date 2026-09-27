@@ -69,18 +69,33 @@ const config: Config = {
       padding: "1.25rem",
     },
     extend: {
+      screens: {
+        xs: "420px",
+      },
       colors: {
+        // brand: {
+        //   50: "#fffbea",
+        //   100: "#fff3c4",
+        //   200: "#fce588",
+        //   300: "#fadb5f",
+        //   400: "#f7c948",
+        //   500: "#f0b429",
+        //   600: "#de911d",
+        //   700: "#cb6e17",
+        //   800: "#b44d12",
+        //   900: "#8d2b0b",
+        // },
         brand: {
-          50: "#fffbea",
-          100: "#fff3c4",
-          200: "#fce588",
-          300: "#fadb5f",
-          400: "#f7c948",
-          500: "#f0b429",
-          600: "#de911d",
-          700: "#cb6e17",
-          800: "#b44d12",
-          900: "#8d2b0b",
+          50: "#f5f3fb", // very light lavender — subtle backgrounds
+          100: "#e8e3f7", // light lavender — hover pills
+          200: "#d1c5ef", // pale purple — decorative numbers
+          300: "#b09ee0", // medium-light
+          400: "#8b70ce", // light accent — used on dark backgrounds (eyebrow-light)
+          500: "#3E2193", // ★ YOUR LOGO COLOR — buttons, badges, primary
+          600: "#351c7d", // hover state
+          700: "#2b1665", // dark link text on white
+          800: "#22114f", // very dark
+          900: "#190c3a", // deepest
         },
         ink: {
           50: "#f5f7fa",

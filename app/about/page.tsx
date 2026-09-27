@@ -486,7 +486,7 @@ export default function AboutPage() {
               &ldquo;{site.tagline}&rdquo;
             </p>
 
-            <Link href="/contact" className="btn-primary mt-9">
+            <Link href="/contact" className="btn-primary text-ink-100  mt-9">
               Work With Us <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -494,7 +494,7 @@ export default function AboutPage() {
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg sm:mt-10">
               <Image
-                src="https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1000&q=80"
+                src="/assets/crane1.png"
                 alt="Crane lifting operations"
                 fill
                 sizes="(max-width: 1024px) 50vw, 25vw"
@@ -503,7 +503,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                src="/assets/truck.jpg"
                 alt="Heavy transport truck"
                 fill
                 sizes="(max-width: 1024px) 50vw, 25vw"

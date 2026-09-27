@@ -123,6 +123,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCall from "@/components/FloatingCall";
 import { site } from "@/lib/site";
+import CrispChat from "@/components/CrispChat";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -195,6 +196,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <CrispChat />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

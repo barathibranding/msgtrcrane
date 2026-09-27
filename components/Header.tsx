@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { nav, site } from "@/lib/site";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -50,12 +51,16 @@ export default function Header() {
       </div>
 
       <header className="sticky top-0 z-50 border-b border-ink-100 bg-white/95 backdrop-blur">
-        <div className="container-x flex h-[72px] items-center justify-between gap-4">
+        <div className="container-x flex h-[80px] items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-brand-500 font-display text-lg font-bold text-ink-900">
-              MS
-            </span>
+            <Image
+              src="/assets/logobg.png"
+              alt="Mohamed Salem Al Shamsi"
+              width={44}
+              height={44}
+              className="h-20 w-40 shrink-0 rounded-md object-cover"
+            />
             <span className="leading-tight">
               <span className="block font-display text-[15px] font-bold uppercase tracking-wide text-ink-900 sm:text-base">
                 Mohamed Salem Al Shamsi
@@ -91,9 +96,11 @@ export default function Header() {
               href={site.phonePrimaryHref}
               className="btn-primary hidden !px-5 !py-3 sm:inline-flex"
             >
-              <Phone className="h-4 w-4" />
-              <span className="hidden xl:inline">{site.phonePrimary}</span>
-              <span className="xl:hidden">Call Now</span>
+              <Phone className="h-4 w-4 text-ink-100 " />
+              <span className="hidden xl:inline text-ink-100 ">
+                {site.phonePrimary}
+              </span>
+              <span className="xl:hidden text-ink-100 ">Call Now</span>
             </a>
 
             <button

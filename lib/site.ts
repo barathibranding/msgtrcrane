@@ -282,7 +282,7 @@
 //       "Our primary service — rental of heavy equipment to businesses and individuals, including mobile cranes, wheel loaders and boom loaders with certified operators.",
 //     icon: "crane",
 //     points: [
-//       "Mobile cranes (Kato)",
+//       "Mobile cranes ()",
 //       "Wheel loaders (CAT / JCB)",
 //       "Boom loaders & telehandlers",
 //     ],
@@ -363,7 +363,7 @@
 
 // export const fleet = [
 //   {
-//     name: "Mobile Cranes (Kato)",
+//     name: "Mobile Cranes ()",
 //     capacity: "25 – 500 Ton",
 //     use: "Construction, steel erection, heavy lifting, oil field support",
 //   },
@@ -602,10 +602,9 @@ export const services: ServiceItem[] = [
     title: "Heavy Equipment Rental",
     description:
       "Our primary service — rental of heavy equipment to businesses and individuals, including mobile cranes, wheel loaders and boom loaders with certified operators.",
-    image:
-      "https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/crane1.png",
     points: [
-      "Mobile cranes (Kato)",
+      "Mobile cranes ()",
       "Wheel loaders (CAT / JCB)",
       "Boom loaders & telehandlers",
     ],
@@ -615,8 +614,7 @@ export const services: ServiceItem[] = [
     title: "Tipper & Dumper Truck Services",
     description:
       "Fleet of 3-axle tipper trucks equipped to transport a wide variety of construction materials with experienced, licensed drivers.",
-    image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/truck.jpg",
     points: [
       "Road base & sub base",
       "Sand & aggregates",
@@ -628,8 +626,7 @@ export const services: ServiceItem[] = [
     title: "Low Bed & Trailer Transport",
     description:
       "Low bed and flat trailers for the safe mobilisation of heavy equipment to site and safe delivery of prefabricated building materials.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/lowbed.jpg",
     points: [
       "Heavy equipment mobilisation",
       "Prefabricated material delivery",
@@ -641,8 +638,7 @@ export const services: ServiceItem[] = [
     title: "Passenger Bus Transport",
     description:
       "Passenger buses available in 66, 34 and 9 seat configurations for the transport of labour and staff to and from site.",
-    image:
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/passenger.jpg",
     points: [
       "66, 34 and 9 seat buses",
       "Labour & staff transport",
@@ -654,8 +650,7 @@ export const services: ServiceItem[] = [
     title: "Construction Materials Supply",
     description:
       "Supply of essential road and construction materials directly to contracting companies across the UAE.",
-    image:
-      "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/ConstructionMaterialsSupply.jpg",
     points: [
       "Road base & sub base",
       "Black, red & white sand",
@@ -667,8 +662,7 @@ export const services: ServiceItem[] = [
     title: "Vehicle Recovery & Towing",
     description:
       "Towing and transporting of broken down cars without repair, with rapid 24/7 dispatch for accidents and breakdowns.",
-    image:
-      "https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/cartow.jpg",
     points: [
       "24/7 emergency dispatch",
       "Light to heavy duty wreckers",
@@ -680,8 +674,7 @@ export const services: ServiceItem[] = [
     title: "Onshore & Offshore Oil Field Services",
     description:
       "Proven experience supporting onshore and offshore oil and gas fields and facilities with lifting, transport and equipment movement.",
-    image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/cartow.jpg",
     points: [
       "Onshore & offshore support",
       "HSE-compliant crews",
@@ -695,64 +688,58 @@ export type FleetItem = {
   capacity: string;
   use: string;
   image: string;
+  href?: string;
 };
 
 export const fleet: FleetItem[] = [
   {
-    name: "Mobile Cranes (Kato)",
+    name: "Mobile Cranes",
     capacity: "25 – 500 Ton",
     use: "Construction, steel erection, heavy lifting, oil field support",
-    image:
-      "https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/crane1.png",
+    href: "/mobile-cranes",
   },
   {
     name: "Wheel Loaders",
     capacity: "CAT / JCB",
     use: "Material handling, loading, site clearing",
-    image:
-      "https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/wheelloaders.jpg",
   },
   {
     name: "Boom Loaders / Telehandlers",
     capacity: "Reach up to 17 m",
     use: "Access, material placement, site lifting",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/boomloader.jpg",
   },
   {
     name: "3-Axle Tipper Trucks",
     capacity: "Mercedes & equivalent",
     use: "Road base, sub base, sand, aggregates",
-    image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/truck.jpg",
   },
   {
     name: "Low Bed Trailers",
     capacity: "Up to 100 Ton",
     use: "Excavators, dozers, heavy machinery mobilisation",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/lowbed.jpg",
   },
   {
     name: "Flatbed Trailers",
     capacity: "Up to 60 Ton",
     use: "Pipes, prefabricated materials, general cargo",
-    image:
-      "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/flatbed.jpg",
   },
   {
     name: "Passenger Buses",
     capacity: "9 / 34 / 66 seats",
     use: "Labour and staff transport to site",
-    image:
-      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/passenger.jpg",
   },
   {
     name: "Recovery Trucks & Wreckers",
     capacity: "Light to Heavy Duty",
     use: "Accident recovery, breakdown towing",
-    image:
-      "https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/cartow.jpg",
   },
 ];
 
@@ -764,43 +751,35 @@ export type MaterialItem = {
 export const materials: MaterialItem[] = [
   {
     name: "Road Base",
-    image:
-      "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/RoadBase.jpg",
   },
   {
     name: "Sub Base",
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/SubBase.jpg",
   },
   {
     name: "Black Sand",
-    image:
-      "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/BlackSand.jpg",
   },
   {
     name: "Red Sand",
-    image:
-      "https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/RedSand.jpg",
   },
   {
     name: "White Sand",
-    image:
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/WhiteSand.jpg",
   },
   {
     name: "Aggregate 3/8",
-    image:
-      "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/Aggregate38.jpg",
   },
   {
     name: "Aggregate 3/4",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/Aggregate34.jpg",
   },
   {
     name: "Round Aggregate",
-    image:
-      "https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/materials/RoundAggregate.jpg",
   },
 ];
 
@@ -812,43 +791,35 @@ export type IndustryItem = {
 export const industries: IndustryItem[] = [
   {
     name: "Oil & Gas",
-    image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Oil&Gas.jpg",
   },
   {
     name: "Construction",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Construction.jpg",
   },
   {
     name: "Military Works",
-    image:
-      "https://images.unsplash.com/photo-1580745531722-c5b6a9b2ee5b?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Military.jpg",
   },
   {
     name: "Infrastructure & Roads",
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Infrastructure.jpg",
   },
   {
     name: "Ports & Logistics",
-    image:
-      "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Ports.jpg",
   },
   {
     name: "Municipalities",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Municipalities.jpg",
   },
   {
     name: "Manufacturing",
-    image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Manufacturing.jpg",
   },
   {
     name: "Utilities & Power",
-    image:
-      "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
+    image: "/assets/industries/Utilities.jpg",
   },
 ];
 
@@ -959,5 +930,148 @@ export const process = [
     step: "04",
     title: "Job Completion",
     text: "Safe execution, sign-off and documentation supplied on request.",
+  },
+];
+export type MobileCraneItem = {
+  slug: string;
+  tonnage: number;
+  title: string;
+  model: string;
+  description: string;
+  image: string;
+  bestFor: string;
+  specs: { label: string; value: string }[];
+};
+
+export const mobileCranes: MobileCraneItem[] = [
+  {
+    slug: "75-ton",
+    tonnage: 75,
+    title: "75 Ton Mobile Crane",
+    model: " NK-750 / equivalent",
+    description:
+      "Compact and versatile rough-terrain crane for urban construction, HVAC installations and general lifting in tight spaces.",
+    image: "/assets/cranes/75ton.jpg",
+    bestFor: "Urban construction, HVAC, steel erection on low-rise buildings",
+    specs: [
+      { label: "Max Capacity", value: "75 Ton" },
+      { label: "Boom Length", value: "Up to 44 m" },
+      { label: "Jib", value: "Optional 12 m" },
+      { label: "Drive", value: "4×4 rough terrain" },
+    ],
+  },
+  {
+    slug: "100-ton",
+    tonnage: 100,
+    title: "100 Ton Mobile Crane",
+    model: " NK-1000 / equivalent",
+    description:
+      "A workhorse for mid-sized industrial and infrastructure projects requiring reach and stable heavy lifting capacity.",
+    image: "/assets/cranes/75ton.jpg",
+    bestFor: "Precast erection, plant maintenance, mid-rise construction",
+    specs: [
+      { label: "Max Capacity", value: "100 Ton" },
+      { label: "Boom Length", value: "Up to 50 m" },
+      { label: "Jib", value: "Optional 15 m" },
+      { label: "Drive", value: "All-terrain" },
+    ],
+  },
+  {
+    slug: "120-ton",
+    tonnage: 120,
+    title: "120 Ton Mobile Crane",
+    model: " NK-1200 / equivalent",
+    description:
+      "Balanced capacity and mobility, ideal for large infrastructure works and heavy structural installations.",
+
+    image: "/assets/cranes/120ton.jpg",
+    bestFor: "Bridge sections, large steel structures, industrial plants",
+    specs: [
+      { label: "Max Capacity", value: "120 Ton" },
+      { label: "Boom Length", value: "Up to 52 m" },
+      { label: "Jib", value: "Optional 18 m" },
+      { label: "Drive", value: "All-terrain" },
+    ],
+  },
+  {
+    slug: "160-ton",
+    tonnage: 160,
+    title: "160 Ton Mobile Crane",
+    model: " NK-1600 / equivalent",
+    description:
+      "Heavy-duty lifting for oil field support, plant shutdowns and major infrastructure projects across the UAE.",
+    image: "/assets/cranes/160ton.jpg",
+    bestFor: "Oil field work, refinery shutdowns, heavy modular lifts",
+    specs: [
+      { label: "Max Capacity", value: "160 Ton" },
+      { label: "Boom Length", value: "Up to 60 m" },
+      { label: "Jib", value: "Optional 20 m" },
+      { label: "Drive", value: "All-terrain" },
+    ],
+  },
+  {
+    slug: "200-ton",
+    tonnage: 200,
+    title: "200 Ton Mobile Crane",
+    model: " NK-2000 / equivalent",
+    description:
+      "High-capacity crane for major industrial, oil & gas and infrastructure projects requiring maximum reach and control.",
+    image: "/assets/cranes/200ton.jpg",
+    bestFor: "Oil & gas, power plants, large module erection",
+    specs: [
+      { label: "Max Capacity", value: "200 Ton" },
+      { label: "Boom Length", value: "Up to 65 m" },
+      { label: "Jib", value: "Optional 24 m" },
+      { label: "Drive", value: "All-terrain" },
+    ],
+  },
+  {
+    slug: "300-ton",
+    tonnage: 300,
+    title: "300 Ton Mobile Crane",
+    model: " NK-3000 / equivalent",
+    description:
+      "Heavy-lift class crane for complex petrochemical, refinery and heavy infrastructure operations.",
+    image: "/assets/cranes/300ton.jpg",
+    bestFor: "Petrochemical plants, refinery turnaround, heavy modules",
+    specs: [
+      { label: "Max Capacity", value: "300 Ton" },
+      { label: "Boom Length", value: "Up to 70 m" },
+      { label: "Jib", value: "Optional 30 m" },
+      { label: "Drive", value: "All-terrain" },
+    ],
+  },
+  {
+    slug: "500-ton",
+    tonnage: 500,
+    title: "500 Ton Mobile Crane",
+    model: "Heavy-lift mobile crane",
+    description:
+      "Super-heavy lift capability for the largest industrial projects, offshore support and major plant installations.",
+    image: "/assets/cranes/500ton.jpg",
+    bestFor: "Largest industrial lifts, offshore modules, plant construction",
+    specs: [
+      { label: "Max Capacity", value: "500 Ton" },
+      { label: "Boom Length", value: "Up to 84 m" },
+      { label: "Jib", value: "Optional 36 m" },
+      { label: "Drive", value: "All-terrain / crawler-mounted" },
+    ],
+  },
+  {
+    slug: "700-ton",
+    tonnage: 700,
+    title: "700 Ton Mobile Crane",
+    model: "Heavy-lift mobile crane",
+    description:
+      "Our largest lifting capacity — for landmark projects, refinery modules and offshore platform work.",
+    image: "/assets/cranes/700ton.jpg",
+    bestFor:
+      "Offshore modules, super-heavy industrial lifts, flagship projects",
+    specs: [
+      { label: "Max Capacity", value: "700 Ton" },
+      { label: "Boom Length", value: "Up to 90 m" },
+      { label: "Jib", value: "Optional 42 m" },
+      { label: "Drive", value: "All-terrain / crawler-mounted" },
+    ],
   },
 ];
