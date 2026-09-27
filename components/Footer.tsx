@@ -142,7 +142,7 @@ export default function Footer() {
               alt="Mohamed Salem Al Shamsi"
               width={44}
               height={44}
-              className="h-20 w-40 shrink-0 rounded-md object-cover"
+              className="h-10 w-20 shrink-0 rounded-md object-cover sm:h-14 sm:w-28 md:h-20 md:w-40"
             />
             <span className="font-display text-base font-bold uppercase leading-tight tracking-wide text-white">
               Mohamed Salem

@@ -791,7 +791,7 @@ export type IndustryItem = {
 export const industries: IndustryItem[] = [
   {
     name: "Oil & Gas",
-    image: "/assets/industries/Oil&Gas.jpg",
+    image: "/assets/industries/oilgas.jpg",
   },
   {
     name: "Construction",
