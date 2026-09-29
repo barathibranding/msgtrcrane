@@ -570,7 +570,7 @@ export const site = {
   emailHref: "mailto:MSGTR2013@GMAIL.COM",
   hours: "Open 24 hours — 7 days a week for emergency recovery",
   mapEmbed:
-    "https://www.google.com/maps?q=Musaffah+Industrial+5+Abu+Dhabi+United+Arab+Emirates&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13156.281379171214!2d54.4849020448041!3d24.362475099210243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e41aebd9a4cf1%3A0xd2e009d720c9ca0b!2sMOHAMED%20SALEM%20AL%20SHAMISI%20GENERAL%20TRANSPORT%20%26%20RECOVERY%20MSGTR!5e1!3m2!1sen!2sae!4v1790681011896!5m2!1sen!2sae",
 };
 
 export const nav = [

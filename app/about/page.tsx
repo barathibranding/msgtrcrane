@@ -494,7 +494,7 @@ export default function AboutPage() {
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg sm:mt-10">
               <Image
-                src="/assets/crane1.png"
+                src="/assets/cranes/crane6.jpeg"
                 alt="Crane lifting operations"
                 fill
                 sizes="(max-width: 1024px) 50vw, 25vw"

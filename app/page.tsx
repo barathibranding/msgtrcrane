@@ -419,7 +419,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <Image
-                src="/assets/cranes/crane3.jpg"
+                src="/assets/cranes/crane5.jpeg"
                 alt="Heavy crane operating on site"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
